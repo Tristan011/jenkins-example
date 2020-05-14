@@ -1,9 +1,4 @@
 node {
-            stage('Fetch code'){
-                
-                git 'https://github.com/Tristan011/jenkins-example.git'
-                
-            }
             stage('Build'){
                 
                     withMaven{ //hiervoor moet plugin 'pipeline-maven' geinstalleer worden
