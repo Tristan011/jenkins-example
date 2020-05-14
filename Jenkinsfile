@@ -24,8 +24,5 @@ node {
             stage('Deployment stage'){
                         sh 'cd target/classes/com/techprimers/testing/ java FizzBuzz'
             }
-            stage('Post clean-up'){
-                    deleteDir()
-                    echo 'Delete folders'
-            }
+            
 }
