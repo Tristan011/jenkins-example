@@ -1,8 +1,4 @@
 node {
-            stage('clean-up'){
-                    deleteDir()
-                    echo 'Delete folders'
-            }
             stage('Build'){
                 
                     withMaven{ //hiervoor moet plugin 'pipeline-maven' geinstalleer worden
