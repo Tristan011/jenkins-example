@@ -1,4 +1,7 @@
 node {
+            stage('Node locatie aanpassen'){
+		sh 'sudo cp -R var/lib/jenkins/workspace/SNB2_Keuze/* var/lib/jenkins/workspace/SNB2_Keuze@2/'
+	   }
             stage('Build'){
                 
                     withMaven{ //hiervoor moet plugin 'pipeline-maven' geinstalleer worden
